@@ -34,15 +34,8 @@ require 'db.php';
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+  <?php include 'get_clientes.php'; ?>
   </tbody>
+  </table>
     </div>
 </body>
