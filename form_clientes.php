@@ -6,28 +6,32 @@
 <body>
     <?php include 'navbar.php'?>
     <div class="container mt-4">
-    <form >
+        <div class="row">
+    <form action="save_clientes.php" method="POST">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nome</label>
-        <input type="text" class="form-control" name="nome" id="nome">
+        <input type="text" class="form-control" name="nome">
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Telefone</label>
-        <input type="text" class="form-control" name="telefone" id="telefone">
+        <input type="number" class="form-control" name="telefone">
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">CEP</label>
-        <input type="text" class="form-control" name="cep" id="cep">
+        <input type="number" class="form-control" name="cep" >
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="text" class="form-control" name="email" id="email"  placeholder="lucas@exemplo.com">
+        <input type="text" class="form-control" name="email" placeholder="lucas@exemplo.com">
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">CPF</label>
-        <input type="text" class="form-control" name="cpf" id="cpf">
+        <input type="number" class="form-control" name="cpf">
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="mb-3"> 
+    <button type="submit" class="btn btn-primary" name="save_cliente">Enviar</button>
+    </div>
 </form>
 </body>
-    </div>
+</div>
+</div>
