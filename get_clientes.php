@@ -10,7 +10,7 @@ if (mysqli_num_rows($clientes) > 0) {
         echo"  <td>".$cliente['id']."</td>";
         echo"  <td>".$cliente['nome']."</td>";
         if ($cliente['telefone'] <= 0) {
-            echo "<td>Sem numero registrado</td>";
+            echo "<td>Sem número registrado</td>";
         } else {
             echo"<td>".$cliente['telefone']."</td>";
         }
