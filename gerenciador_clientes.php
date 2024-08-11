@@ -17,7 +17,7 @@ require 'db.php';
         <div class="card">
           <div class="card-header">
             <h4>Clientes cadastrados
-            <a href="#" class="btn btn-primary float-end">Adicionar clientes</a>
+            <a href="form_clientes.php" class="btn btn-primary float-end">Adicionar clientes</a>
             </h4>
           </div>
           <div class="card-body">
