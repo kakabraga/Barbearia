@@ -17,7 +17,7 @@ if (mysqli_num_rows($clientes) > 0) {
         echo"  <td>".$cliente['email']."</td>";
         echo"  <td>".$cliente['cep']."</td>";
         echo"  <td>".$cliente['cpf']."</td>";
-        echo"  <td><button class='btn btn-primary btn-sm' type='button'>Voltar</button></td>";
+        echo"  <td><button class='btn btn-primary btn-sm' type='button'>Alterar</button>&nbsp&nbsp&nbsp<button class='btn btn-danger btn-sm' type='button'>Excluir</button></td>";
         echo"</tr>";
     }
 }
