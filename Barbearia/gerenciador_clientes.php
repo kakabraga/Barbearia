@@ -39,6 +39,7 @@ require 'db.php';
   </thead>
   <tbody>
   <?php include 'get_clientes.php'; ?>
+
   </tbody>
   </table>
     </div>
