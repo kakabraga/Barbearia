@@ -11,4 +11,8 @@ if (isset($_POST['save_cliente'])) {
     $sql = "INSERT INTO cliente (nome, telefone, cep, email, cpf) values ('$nome', '$telefone', '$cep', '$email', '$cpf')";
 
     mysqli_query($db_barbearia, $sql);
+    
+    if (mysqli_affected_rows($db_barbearia) >= 0) {
+        header('Location: gerenciador_clientes.php');
+    }
 }
