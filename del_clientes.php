@@ -9,3 +9,4 @@ if (isset($_POST['Excluir'])) {
         echo "Erro ao excluir cliente: " . mysqli_error($db_barbearia);
     }
 }
+

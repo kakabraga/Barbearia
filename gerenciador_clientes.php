@@ -23,7 +23,7 @@ $(document).ready(function() {
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-12">
-      <div class="card" style="border-radius: 5px;">
+      <div class="card">
       <div class="card-header" style="border-radius: 10px;">
             <h4>Clientes cadastrados
             <a href="form_clientes.php" class="btn btn-primary float-end">Adicionar clientes</a>
