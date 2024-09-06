@@ -27,16 +27,17 @@ require ('db.php');
                     <div class="card">
                         <div class="card-header" style="border-radius: 10px;">
                             <h4 style="text-align: center;">Tabela de Serviços
+                            <a href='form_servicos.php' class='btn btn-primary btn-sm float-end' style='border-radius: 5px;'>Adicionar Serviço</a></td>"
                             </h4>
                         </div>
                         <div class="card-body">
                         <table id="servicos" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                <th scope="col" style="text-align:center;">ID</th>
-                                <th scope="col" style="text-align:center;">SERVIÇOS</th>
-                                <th scope="col" style="text-align:center;">PREÇOS</th>
-                                <th scope="col" style="text-align:center;">OPÇÕES</th>
+                                <th>ID</th>
+                                <th>SERVIÇOS</th>
+                                <th>PREÇOS</th>
+                                <th>OPÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
