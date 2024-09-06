@@ -18,8 +18,9 @@ if (mysqli_num_rows($clientes) > 0) {
         echo "  <td>
                     <a href='form_altera_clientes.php?id=".$cliente['id']."' class='btn btn-primary btn-sm'>Editar</a>&nbsp;&nbsp;&nbsp;
                     <form action='del_clientes.php' method='POST' style='display:inline;'>
-                        <button type='submit' name='Excluir' value='".$cliente['id']."' class='btn btn-danger btn-sm'>Excluir</button>
+                        <button type='submit' name='Excluir' value='".$cliente['id']."' class='btn btn-danger btn-sm'>Excluir</button>&nbsp;&nbsp;&nbsp;
                     </form>
+                    <a href='form_clientes.php' class='btn btn-primary btn-sm'>Adicionar clientes</a>
                 </td>";
         echo "</tr>";
     }
