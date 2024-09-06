@@ -14,6 +14,7 @@
     <!-- As a link -->
 <nav class="navbar bg-body-tertiary dark">
   <div class="container-fluid " id="top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="gerenciador_clientes.php">Navbar</a>
+    <a class="navbar-brand" href="tabela_servicos.php">Cadastro de Serviços</a>
   </div>
 </nav>
