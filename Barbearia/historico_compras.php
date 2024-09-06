@@ -27,18 +27,19 @@ require ('db.php');
                                 <div class="card-header">
                                     <h4>
                                         Histórico de Compras
-                                        <a href="gerenciador_clientes.php" class="btn btn-primary btn-sm">Voltar para página principal</a>
+                                        <a href='form_compra.php' class='btn btn-primary btn-sm float-end' style='border-radius: 5px;'>Registrar Compra</a></td>"
                                     </h4>
                                 </div>
                                 <div class="card-body">
-                                    <table id="clientes" class="table table-bordered table-striped">
+                                    <table id="compras" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th style="text-align: center;">CLIENTE</th>
-                                                <th style="text-align: center;">SERVIÇO</th>
-                                                <th style="text-align: center;">FORMA DE PAGAMENTO</th>
-                                                <th style="text-align: center;">PREÇO</th>
-                                                <th style="text-align: center;">DATA E HORA</th>
+                                                <th>ID</th>
+                                                <th>CLIENTE</th>
+                                                <th>SERVIÇO</th>
+                                                <th>PREÇO</th>
+                                                <th>FORMA DE PAGAMENTO</th>
+                                                <th>DATA E HORA</th>
                                             </tr>
                                         </thead>
                                         <tbody>
