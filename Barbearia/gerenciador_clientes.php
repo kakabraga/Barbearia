@@ -25,8 +25,7 @@ $(document).ready(function() {
       <div class="col-md-12">
       <div class="card">
       <div class="card-header" style="border-radius: 10px;">
-            <h4>Clientes cadastrados
-            <a href="form_clientes.php" class="btn btn-primary float-end">Adicionar clientes</a>
+            <h4 style="text-align: center;">Clientes cadastrados
             </h4>
           </div>
           <div class="card-body">
@@ -47,5 +46,9 @@ $(document).ready(function() {
 
   </tbody>
   </table>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
