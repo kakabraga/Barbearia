@@ -12,9 +12,10 @@
 </head>
 <body>
     <!-- As a link -->
-<nav class="navbar bg-body-tertiary dark">
-  <div class="container-fluid " id="top">
+<nav class="navbar bg-body-tertiary dark top">
+  <div class="container-fluid ">
     <a class="navbar-brand" href="gerenciador_clientes.php">Navbar</a>
     <a class="navbar-brand" href="tabela_servicos.php">Cadastro de Serviços</a>
+    <a class="navbar-brand" href="historico_compras.php">Historico de Compas</a>
   </div>
 </nav>
