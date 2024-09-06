@@ -2,8 +2,6 @@
 require('db.php');
 session_start();
  ?>
-
- 
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +17,17 @@ session_start();
                 </h4>
                 <a href="gerenciador_clientes.php" class="btn btn-primary">Voltar para tabela de clientes</a>
                 <div class="card-body">
-                <form action="altera_clientes.php" method="GET">
+             <?php
+                if (isset($_GET['id'])) {         
+                    $id_cliente = mysqli_real_escape_string($db_barbearia, $_GET['id']);   
+                    $sql = "SELECT * FROM cliente where id = '$id_cliente'";
+                    $query = mysqli_query($db_barbearia, $sql);
+
+                    if (mysqli_num_rows($query) > 0) {
+                        $cliente = mysqli_fetch_array($query);
+             ?>
+                <form action="altera_clientes.php" method="POST">
+                    <input type="hidden" name="id_cliente" value="<?=$cliente['id']?>">
                         <div class="mb-3">
                             <label>Nome</label>
                             <input type="text" value="<?=$cliente['nome']?>" class="form-control" name="nome">
@@ -45,6 +53,12 @@ session_start();
                         </div>
                     </div>
                     </form>
+                    <?php 
+                } else {
+                    echo 'nao foi';
+                }
+                }
+                    ?>
                                     </div>
                             </div>
                         

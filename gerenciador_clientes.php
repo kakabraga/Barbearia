@@ -28,8 +28,6 @@ $(document).ready(function() {
             <h4>Clientes cadastrados
             <a href="form_clientes.php" class="btn btn-primary float-end">Adicionar clientes</a>
             </h4>
-            <div>
-        </div>
           </div>
           <div class="card-body">
             <table id="clientes" class="table table-bordered table-striped">
