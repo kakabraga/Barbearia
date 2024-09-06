@@ -1,7 +1,6 @@
 <?php
 require ('db.php');
 ?>
-
 <!doctype html>
     <head>
         <meta charset="UTF-8">
@@ -16,33 +15,34 @@ require ('db.php');
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script>
     $(document).ready(function() {
-    $('#clientes').DataTable();
+    $('#servicos').DataTable();
     });
     </script>
     </head>
     <body>
-        <?php include ('navbar.php'); ?>
+        <?php include ('navbar.php') ?>
         <div class="container mt-4">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header" style="border-radius: 10px;">
                             <h4 style="text-align: center;">Tabela de Serviços
-                            <a href="form_servicos.php" class="btn btn-primary float-end" style="border-radius: 5px;">Adicionar Serviço</a>
                             </h4>
                         </div>
                         <div class="card-body">
-                        <table id="clientes" class="table table-bordered table-striped">
+                        <table id="servicos" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <td>ID</td>
-                                    <td>SERVIÇOS</td>
-                                    <td>PREÇOS</td>
-                                    <td>OPÇÕES</td>
+                                <th scope="col" style="text-align:center;">ID</th>
+                                <th scope="col" style="text-align:center;">SERVIÇOS</th>
+                                <th scope="col" style="text-align:center;">PREÇOS</th>
+                                <th scope="col" style="text-align:center;">OPÇÕES</th>
                                 </tr>
                             </thead>
+                            <tbody>
                                 <?php include('get_servicos.php'); ?>
                             </tbody>
+                        </table>
                         </div>
                     </div>
                 </div>
